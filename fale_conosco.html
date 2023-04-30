@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/estilo.css" />
+    <title>Fale Conosco</title>
+  </head>
+  <body>
+    <nav>
+      <h1>Tec<span>Devs</span></h1>
+      <div>
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+            <a href="imagens.html">Imagens</a>
+            <a href="links.html">Links</a>
+            <a href="fale_conosco.html">Fale conosco</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <header id="fale-conosco">
+      <h2>Fale Conosco</h2>
+    </header>
+    <form>
+      <div>
+        <label>Nome</label>
+        <input
+          class="texto"
+          type="text"
+          name="Nome"
+          id="Nome"
+          placeholder="Digite Seu Nome"
+          required
+        />
+      </div>
+
+      <div>
+        <label>SobreNome</label>
+        <input
+          class="texto"
+          type="text"
+          name="Sobrenome"
+          id="Sobrenome"
+          placeholder="Digite Seu Sobrenome"
+          required
+        />
+      </div>
+
+      <div>
+        <label>Email</label>
+        <input
+          class="texto"
+          type="email"
+          name="Email"
+          id="Email"
+          placeholder="Digite Seu Email"
+          required
+        />
+      </div>
+      <div>
+        <label class="mensagem">Mensagem</label>
+        <textarea
+          row="15"
+          name="Mensagem"
+          id="Mensagem"
+          placeholder="Digite sua mensagem"
+          required
+        ></textarea>
+      </div>
+      <div>
+        <input class="enviar" type="submit" value="Enviar" />
+      </div>
+    </form>
+
+    <footer id="rodape-formulario">
+      <div class="rodape-uniube">
+        Jonathas 2023 © Todos os direitos reservados
+      </div>
+    </footer>
+  </body>
+</html>
