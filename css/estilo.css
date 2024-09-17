@@ -39,11 +39,9 @@ span {
 nav a {
   color: #fff;
   text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 300;
-  padding: 18px;
-  font-size: 16px;
-  font-weight: bold;
+  padding: 12px;
+  font-size: 18px;
+  font-weight: 200;
   letter-spacing: 1.5px;
 }
 
@@ -490,3 +488,12 @@ input.enviar:active {
 }
 
 /*final formulario*/
+
+@media screen and (max-width: 1115px) {
+  nav a {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+}
