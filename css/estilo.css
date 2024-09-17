@@ -1,32 +1,35 @@
 * {
   margin: 0%;
   padding: 0%;
+  box-sizing: border-box;
 }
 
 /* menu site*/
 
 body {
-  background-color: #fff;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  background-color: #ffffff;
+  font-family: 'Poppins', 'Helvetica Neue', Helvetica;
 }
 
 /*inicio menu*/
 nav {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-around;
   top: 0;
   width: 100%;
   height: 100px;
   background-color: rgb(12, 5, 37);
   position: fixed;
+  z-index: 1000;
 }
 
 h1 {
   color: rgb(198, 241, 4);
-  font-size: 70px;
+  font-size: 80px;
   margin-right: 450px;
+  font-weight: bold;
+  text-align: center;
 }
 
 span {
@@ -37,16 +40,16 @@ nav a {
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-weight: 300;
   padding: 18px;
   font-size: 16px;
   font-weight: bold;
+  letter-spacing: 1.5px;
 }
 
 nav a:hover {
-  background-color: rgb(252, 253, 249);
-  color: rgb(12, 5, 37);
+  opacity: 0.4;
+  text-decoration: underline;
 }
 nav ul {
   display: flex;
@@ -65,57 +68,62 @@ nav ul {
   width: fit-content;
   margin: auto;
   padding: 10px;
-  margin-top: 130px;
+  margin-top: 150px;
   background-color: rgb(12, 5, 37);
   color: rgb(198, 241, 4);
   border-radius: 5px;
+  letter-spacing: 1.5px;
+  text-align: center;
 }
 
 .postagem span {
   display: flex;
-  margin-top: 20px;
+  margin-top: 30px;
   padding-bottom: 10px;
   color: black;
   text-align: center;
   justify-content: center;
   font-size: 25px;
+  font-weight: 540;
 }
 
 .postagem p {
-  font-size: 16px;
-  display: flex;
+  font-size: 18px;
+  margin-top: 15px;
   margin-left: 100px;
   padding-right: 90px;
   padding-top: 10px;
   text-indent: 30px;
-  color: black;
-  line-height: 25px;
+  color: rgb(32, 31, 31);
+  line-height: 30px;
   letter-spacing: 0.5px;
+  font-weight: 100;
 }
 
 .postagem img {
-  display: flex;
-  margin-top: 20px;
-  margin-left: 230px;
+  margin-top: 50px;
+  margin-left: 50%;
+  transform: translateX(-50%);
   width: 870px;
   height: 450px;
+  border-radius: 5px;
+  z-index: 1;
 }
 
 .postagem a {
-  display: flex;
+  display: inline-block;
   font-size: 15px;
   text-decoration: none;
   margin-top: 10px;
-  margin-left: 230px;
-  color: black;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  color: rgb(32, 31, 31);
+  margin-bottom: 20px;
 }
 
 .postagem a:hover {
-  display: flex;
   text-decoration: underline;
-  background-color: black;
-  color: #fff;
-  width: fit-content;
+  opacity: 0.7;
 }
 
 .linguagens h2 {
@@ -138,10 +146,11 @@ nav ul {
   padding-top: 10px;
   color: black;
   margin-left: 100px;
-  margin-top: 15px;
+  margin-top: 30px;
 }
 
 .linguagens p {
+  margin-top: 20px;
   font-size: 16px;
   padding-right: 90px;
   padding-top: 20px;
@@ -150,28 +159,27 @@ nav ul {
 }
 
 .linguagens img {
-  display: flex;
-  margin-top: 20px;
-  margin-left: 230px;
+  display: inline-block;
+  margin-top: 50px;
+  margin-left: 50%;
+  transform: translateX(-50%);
   width: 870px;
   height: 450px;
 }
 
 .linguagens a {
-  display: flex;
+  display: inline-block;
   font-size: 15px;
   text-decoration: none;
   margin-top: 10px;
-  margin-left: 230px;
+  margin-left: 50%;
+  transform: translateX(-50%);
   color: black;
 }
 
 .linguagens a:hover {
-  display: flex;
   text-decoration: underline;
-  background-color: black;
-  color: white;
-  width: fit-content;
+  opacity: 0.7;
 }
 
 article {
@@ -181,7 +189,8 @@ article {
 h3 {
   display: flex;
   font-size: 30px;
-  margin: auto;
+  margin-left: 50%;
+  transform: translateX(-50%);
   color: rgb(198, 241, 4);
   text-transform: uppercase;
   padding: 10px;
@@ -200,21 +209,20 @@ h3 {
 }
 
 .desenvolvedor a {
-  display: flex;
+  display: inline-block;
   font-size: 15px;
   text-decoration: none;
   margin-top: 10px;
   margin-left: 32px;
   color: black;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+  margin-left: 50%;
+  transform: translateX(-50%);
 }
 
 .desenvolvedor a:hover {
-  display: flex;
   text-decoration: underline;
-  background-color: black;
-  color: white;
-  width: fit-content;
+  opacity: 0.7;
 }
 
 hr {
@@ -227,18 +235,26 @@ hr {
 h3.livros {
   margin-top: 30px;
   margin-bottom: 20px;
-  margin: 20px auto;
+  margin-left: 50%;
+  transform: translateX(-50%);
 }
 caption {
   text-align: center;
   margin-bottom: 10px;
   font-weight: bold;
 }
+
+caption p {
+  display: inline-block;
+  font-weight: 200;
+  text-align: center;
+}
 table {
   width: 50%;
   border-collapse: separate;
-  margin-left: 323px;
-  margin-top: 40px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-top: 50px;
 }
 
 th,
@@ -273,13 +289,10 @@ tr:hover {
 /*fim tabela*/
 
 #rodape {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   margin: auto;
   margin-top: 40px;
   margin-bottom: 20px;
-  font-weight: 700;
 }
 
 .rodape-uniube {
@@ -298,29 +311,24 @@ tr:hover {
 /*fim pagina principal*/
 
 /*pagina imagens*/
+
 section .area-imagens {
   display: flex;
   flex-direction: column;
 }
 
-.coluna {
-  display: flex;
-  flex-direction: column;
-}
-
 .coluna img {
-  display: flex;
-  width: 70%;
-  margin-left: 187px;
+  width: 870px;
+  height: 450px;
+  margin-left: 50%;
+  transform: translateX(-50%);
   margin-top: 40px;
   border-radius: 7px;
   box-shadow: 5px 5px 5px black;
   border: solid 3px #fff;
-  flex-grow: 1;
 }
 
 .area-imagens h2 {
-  display: flex;
   font-size: 30px;
   width: fit-content;
   margin: auto;
@@ -331,6 +339,8 @@ section .area-imagens {
   margin-top: 130px;
   font-weight: bold;
   border-radius: 5px;
+  margin-left: 50%;
+  transform: translateX(-50%);
 }
 
 /*fim pagina imagens*/
@@ -338,10 +348,10 @@ section .area-imagens {
 /*inicio links*/
 
 .assuntos h2 {
-  display: flex;
   font-size: 30px;
   width: fit-content;
-  margin: auto;
+  margin-left: 50%;
+  transform: translateX(-50%);
   background-color: rgb(12, 5, 37);
   color: rgb(198, 241, 4);
   text-transform: uppercase;
@@ -362,20 +372,18 @@ section .area-imagens {
 }
 
 .assuntos a {
-  display: flex;
+  display: inline-block;
   font-size: 15px;
   text-decoration: none;
   margin-top: 10px;
-  margin-left: 620px;
+  margin-left: 50%;
+  transform: translateX(-50%);
   color: black;
 }
 
 .assuntos a:hover {
-  display: flex;
   text-decoration: underline;
-  background-color: black;
-  color: white;
-  width: fit-content;
+  opacity: 0.7;
 }
 
 /*fim links*/
@@ -386,24 +394,23 @@ section .area-imagens {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 30px;
   background-color: rgb(12, 5, 37);
   color: rgb(198, 241, 4);
   margin-top: 50px;
   margin-top: 130px;
-  margin-left: 470px;
+  margin-left: 50%;
+  transform: translateX(-50%);
   padding: 20px;
-  width: fit-content;
-  width: 331px;
-  border-radius: 5px;
+  width: 420px;
+  border-radius: 20px;
+  font-weight: bold;
 }
 
 form {
-  width: 40px;
-  min-width: 350px;
+  width: 420px;
   background: rgb(12, 5, 37);
-  border-radius: 5px;
+  border-radius: 20px;
   margin: 20px auto;
   padding: 10px;
 }
@@ -411,25 +418,40 @@ form {
 label {
   color: #fff;
   margin-left: 15px;
-  display: flex;
+  display: inline-block;
   margin-top: 10px;
   margin-bottom: 5px;
+  font-size: 18px;
 }
-.texto,
+
+.texto::placeholder {
+  opacity: 0.5;
+  font-size: 14px;
+}
+.texto {
+  outline: none;
+  display: block;
+  width: 100%;
+  border-radius: 20px;
+  border: none;
+  margin: 0 auto;
+  margin-top: 5px;
+  height: 50px;
+  padding-left: 10px;
+  color: rgb(12, 5, 37);
+  font-size: 14px;
+}
+
 textarea {
   outline: none;
   display: block;
-  min-width: 320px;
+  width: 100%;
+  border: none;
   border-radius: 5px;
-  border: 1px solid #c1c1c1;
   margin: 0 auto;
   margin-top: 5px;
-  height: 40px;
+  height: 50px;
   padding-left: 10px;
-}
-
-.texto:focus {
-  background: #c1c1c1;
 }
 
 textarea {
@@ -440,25 +462,28 @@ textarea {
 input.enviar {
   display: block;
   margin: 20px auto;
-  min-width: 330px;
+  width: 100%;
   height: 50px;
   border: none;
   border-radius: 5px;
   font-weight: 700;
   cursor: pointer;
-  font-size: 15px;
+  font-size: 20px;
+  letter-spacing: 1.5px;
 }
 
 input.enviar:hover {
-  background: #c1c1c1;
+  opacity: 0.8;
+}
+
+input.enviar:active {
+  opacity: 0.4;
+  transition: 0.5;
 }
 
 #rodape-formulario {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  margin-top: 20px;
+  text-align: center;
+  margin-top: 30px;
   margin-bottom: 20px;
   color: rgb(12, 5, 37);
   font-size: 15px;
